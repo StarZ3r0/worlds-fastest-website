@@ -3,20 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Worlds Fastest Website Experiment - avagy mi szükséges egy villámgyors weboldalhoz!?">
     <title>Worlds Fastest Website Experiment</title>
     <link rel="stylesheet" href="{{ url("/css/pure-min.css") }}">
     <link rel="stylesheet" href="{{ url("/css/grids-responsive-min.css") }}">
     <link rel="stylesheet" href="{{ url("/css/blog.css") }}">
 </head>
 <body>
-
 <div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-1-4">
         <div class="header">
             <h1 class="brand-title">World Fastest Website</h1>
             <h2 class="brand-tagline">Hogyan készült blog</h2>
-
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
@@ -30,14 +28,13 @@
         </div>
     </div>
     <div class="content pure-u-1 pure-u-md-3-4">
-       
         <div class="posts">
             <h1 class="content-subhead">Összes ráfordítás: 144 USD, Felhasznált idő: ~8 óra</h1>
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Level 0: Domain név</h2>
                     <p class="post-meta">
-                        Írta: <a class="post-author" href="http://tiborlakatos.name/">Lakatos Tibor</a> Kategória: <span class="post-category post-category-general">Általános</span>
+                        Kategória: <span class="post-category post-category-general">Általános</span>
                     </p>
                 </header>
                 <div class="post-description">
@@ -49,12 +46,11 @@
                     </p>
                 </div>
             </section> 
-            
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Level 1: DNS</h2>
                     <p class="post-meta">
-                        Írta: <a class="post-author" href="http://tiborlakatos.name/">Lakatos Tibor</a> Kategória: <span class="post-category post-category-infrastructure">Infrastruktúra</span>
+                        Kategória: <span class="post-category post-category-infrastructure">Infrastruktúra</span>
                     </p>
                 </header>
                 <div class="post-description">
@@ -67,12 +63,11 @@
                     </p>
                 </div>
             </section>  
-            
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Level 2: VPS</h2>
                     <p class="post-meta">
-                        Írta: <a class="post-author" href="http://tiborlakatos.name/">Lakatos Tibor</a> Kategória: <span class="post-category post-category-infrastructure">Infrastruktúra</span>
+                        Kategória: <span class="post-category post-category-infrastructure">Infrastruktúra</span>
                     </p>
                 </header>
                 <div class="post-description">
@@ -128,12 +123,11 @@ Upload: 63.76 Mbit/s
                     </p>
                 </div>
             </section> 
-            
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Level 3: NGINX</h2>
                     <p class="post-meta">
-                        Írta: <a class="post-author" href="http://tiborlakatos.name/">Lakatos Tibor</a> Kategória: <span class="post-category post-category-infrastructure">Infrastruktúra</span>
+                        Kategória: <span class="post-category post-category-infrastructure">Infrastruktúra</span>
                     </p>
                 </header>
                 <div class="post-description">
@@ -150,12 +144,11 @@ Upload: 63.76 Mbit/s
                     </p>
                 </div>
             </section>
-
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Level 4: CDN</h2>
                     <p class="post-meta">
-                        Írta: <a class="post-author" href="http://tiborlakatos.name/">Lakatos Tibor</a> Kategória: <span class="post-category post-category-infrastructure">Infrastruktúra</span>
+                        Kategória: <span class="post-category post-category-infrastructure">Infrastruktúra</span>
                     </p>
                 </header>
                 <div class="post-description">
@@ -173,12 +166,11 @@ Upload: 63.76 Mbit/s
                     </p>
                 </div>
             </section>
-
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Level 5: PHP</h2>
                     <p class="post-meta">
-                        Írta: <a class="post-author" href="http://tiborlakatos.name/">Lakatos Tibor</a> Kategória: <span class="post-category post-category-code">Kód</span>
+                        Kategória: <span class="post-category post-category-code">Kód</span>
                     </p>
                 </header>
                 <div class="post-description">
@@ -188,12 +180,11 @@ Upload: 63.76 Mbit/s
                     <p>Nos így került Phalcon 3.2 a stack utolsó helyére. Hivatalos támogatás is van rá, no meg mivel C kiterjesztésről van szó így a sebességére sem lehet panasz.</p>
                 </div>
             </section>
-
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Assetek optimalizálása</h2>
                     <p class="post-meta">
-                        Írta: <a class="post-author" href="http://tiborlakatos.name/">Lakatos Tibor</a> Kategória: <span class="post-category post-category-code">Kód</span>
+                        Kategória: <span class="post-category post-category-code">Kód</span>
                     </p>
                 </header>
                 <div class="post-description">
@@ -202,16 +193,15 @@ Upload: 63.76 Mbit/s
                     </p>
                     <ul>
                         <li>Egyrészt ugye, célszerű a minél kevesebb asset vagy legalábbis minél kevesebb requestet elérni, ami alapvetőleg is jó, de a fentebb vázolt problémák miatt esetünkben különösen hasznosak. Hogy azért a karbantarthatóság megmaradjon külön kezeljük a 3 CSS fájlt, amiből kettő a <a href="https://purecss.io/">PureCSS</a> saját fáljja, a harmadik pedig a blogunk csinosítására használt állomány. Ezt a PageSpeed modul fűzi össze, majd mindjárt minifyolja is, ezzel tehát különösebb teendőnk nincs.</li>
-                        <li>Az oldalon lévő képek optimalizlásása két eszközzel történk, az svg-ket az <a href="https://github.com/svg/svgo">SVGO</a>-val, minden egyéb képet pedig a <a href="https://kraken.io/">Kraken.io</a>-val optimalizáltam.</li> Minden fájltípusnál jelentős méretcsökkenést (10-40%) lehet elérni az optimalizációval.
+                        <li>Az oldalon lévő képek optimalizlásása két eszközzel történk, az svg-ket az <a href="https://github.com/svg/svgo">SVGO</a>-val, minden egyéb képet pedig a <a href="https://kraken.io/">Kraken.io</a>-val optimalizáltam. Minden fájltípusnál jelentős méretcsökkenést (10-40%) lehet elérni az optimalizációval.</li>
                     </ul>
                 </div>
             </section>
-
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Tesztek</h2>
                     <p class="post-meta">
-                        Írta: <a class="post-author" href="http://tiborlakatos.name/">Lakatos Tibor</a> Kategória: <span class="post-category post-category-general">Általános</span>
+                        Kategória: <span class="post-category post-category-general">Általános</span>
                     </p>
                 </header>
                 <div class="post-description">
@@ -246,12 +236,11 @@ Transfer rate:          974.63 [Kbytes/sec] received
 </pre>
                 </div>
             </section>
-
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Felhasznált szoftverek</h2>
                     <p class="post-meta">
-                        Írta: <a class="post-author" href="http://tiborlakatos.name/">Lakatos Tibor</a> Kategória: <span class="post-category post-category-general">Általános</span>
+                        Kategória: <span class="post-category post-category-general">Általános</span>
                     </p>
                 </header>
                 <div class="post-description">
@@ -288,12 +277,11 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
 </pre>
                 </div>
             </section> 
-            
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Eredmények</h2>
                     <p class="post-meta">
-                        Írta: <a class="post-author" href="http://tiborlakatos.name/">Lakatos Tibor</a> Kategória: <span class="post-category post-category-general">Általános</span>
+                        Kategória: <span class="post-category post-category-general">Általános</span>
                     </p>
                 </header>
                 <div class="post-description">
@@ -303,18 +291,18 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                     <ul>
                         <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fworlds-fastest.website%2F&tab=desktop">Google PageSpeed Insights</a>: mobil 100 pont, desktop 100 pont</li>
                         <li><a href="https://testmysite.thinkwithgoogle.com/">Google Mobile Website Speed Testing Tool</a>: 2s Loading time: Excellent (Low Est. Visitor loss)</li>
-                        <li><a href="https://gtmetrix.com/reports/worlds-fastest.website/Fpjk8D7E">GTmetrix</a>: PageSpeed Score 100% / YSlow Score 100%</li>
+                        <li><a href="https://gtmetrix.com/reports/worlds-fastest.website/Fpjk8D7E">GTmetrix</a>: PageSpeed Score 100% / YSlow Score 99%</li>
                         <li><a href="https://tools.pingdom.com/#!/cJ2YzR/http://worlds-fastest.website/">Pingdom</a>: 100 pont</li>
+                        <li><a href="https://website.grader.com/results/worlds-fastest.website">Hubspot Website Grader</a>: 90 pont</li>
                         <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fworlds-fastest.website%2F">The W3C Markup Validation Service</a>: 100% valid html</li>
                     </ul>
                 </div>
             </section> 
-
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Roadmap</h2>
                     <p class="post-meta">
-                        Írta: <a class="post-author" href="http://tiborlakatos.name/">Lakatos Tibor</a> Kategória: <span class="post-category post-category-general">Általános</span>
+                        Kategória: <span class="post-category post-category-general">Általános</span>
                     </p>
                 </header>
                 <div class="post-description">
@@ -323,11 +311,12 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                     <p>
                     <ul>
                         <li>HTTPS beállítása a Let's Encrypt segítségével</li>
+                        <li>Nginx konfig optimalizálása</li>
+                        <li><a href="https://www.ampproject.org/">AMP</a> verzió létrehozása</li>
                     </ul>
                 </div>
             </section> 
         </div>
-        
         <div class="footer">
             <div class="pure-menu pure-menu-horizontal">
                 <ul>
@@ -336,9 +325,6 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                 </ul>
             </div>
         </div>
-        
-
-
     </div>
 </div>
 </body>
