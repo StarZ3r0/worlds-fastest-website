@@ -288,6 +288,7 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                         <li><a href="https://testmysite.thinkwithgoogle.com/">Google Mobile Website Speed Testing Tool</a>: 2s Loading time: Excellent (Low Est. Visitor loss)</li>
                         <li><a href="https://gtmetrix.com/reports/worlds-fastest.website/J2fHqFtk">GTmetrix</a>: PageSpeed Score 100% / YSlow Score 100%</li>
                         <li><a href="https://tools.pingdom.com/#!/cJ2YzR/http://worlds-fastest.website/">Pingdom</a>: 100 pont</li>
+                        <li><a href="https://performance.sucuri.net/domain/worlds-fastest.website">Sucuri Load Time Tester</a>: Global Performance Grade A+</li>
                         <li><a href="https://website.grader.com/results/worlds-fastest.website">Hubspot Website Grader</a>: 90 pont</li>
                         <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fworlds-fastest.website%2F">The W3C Markup Validation Service</a>: 100% valid html</li>
                     </ul>
