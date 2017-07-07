@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Worlds Fastest Website Experiment - avagy mi szükséges egy villámgyors weboldalhoz!?">
     <title>Worlds Fastest Website Experiment</title>
-    <link rel="stylesheet" href="{{ url("/css/pure-min.css") }}">
-    <link rel="stylesheet" href="{{ url("/css/grids-responsive-min.css") }}">
-    <link rel="stylesheet" href="{{ url("/css/blog.css") }}">
+    {{ assets.outputCss('header') }}
 </head>
 <body>
 <div id="layout" class="pure-g">
@@ -139,9 +137,6 @@ Upload: 63.76 Mbit/s
                         <li>A másik, hogy a <a href="https://developers.google.com/speed/pagespeed/module/">Google PageSpeed modul</a> nincs előre fordítva Nginxhez, amire viszont szükségünk lesz, hogy megfelelően optimalizált oldalt kapjunk.</li>
                     </ol>
                     <p>A fentiek fényében nem volt más választás, mint kézzel fordítani magamnak Nginxet. Talán ezzel ment el a legtöbb időm, de végül persze sikerült a legfrissebb verziót a legújabb PageSpeed modullal összeházasítani.</p>
-                    <p>
-                        <strong>Összes költség</strong>: 29.95 USD / év
-                    </p>
                 </div>
             </section>
             <section class="post">
@@ -291,7 +286,7 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                     <ul>
                         <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fworlds-fastest.website%2F&tab=desktop">Google PageSpeed Insights</a>: mobil 100 pont, desktop 100 pont</li>
                         <li><a href="https://testmysite.thinkwithgoogle.com/">Google Mobile Website Speed Testing Tool</a>: 2s Loading time: Excellent (Low Est. Visitor loss)</li>
-                        <li><a href="https://gtmetrix.com/reports/worlds-fastest.website/Fpjk8D7E">GTmetrix</a>: PageSpeed Score 100% / YSlow Score 99%</li>
+                        <li><a href="https://gtmetrix.com/reports/worlds-fastest.website/J2fHqFtk">GTmetrix</a>: PageSpeed Score 100% / YSlow Score 100%</li>
                         <li><a href="https://tools.pingdom.com/#!/cJ2YzR/http://worlds-fastest.website/">Pingdom</a>: 100 pont</li>
                         <li><a href="https://website.grader.com/results/worlds-fastest.website">Hubspot Website Grader</a>: 90 pont</li>
                         <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fworlds-fastest.website%2F">The W3C Markup Validation Service</a>: 100% valid html</li>

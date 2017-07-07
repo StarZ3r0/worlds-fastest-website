@@ -33,6 +33,7 @@ $di->set(
             [
                 'compiledPath'      => '../app/compiled-templates/',
                 'compiledExtension' => '.compiled',
+                //'compileAlways'     => true,
             ]
         );
 
@@ -60,7 +61,7 @@ $di->set(
     function () {
         $url = new UrlProvider();
         $url->setBaseUri('/');
-        $url->setStaticBaseUri('http://phalcon-12a2.kxcdn.com');
+        //$url->setStaticBaseUri('http://phalcon-12a2.kxcdn.com');
         return $url;
     }
 );

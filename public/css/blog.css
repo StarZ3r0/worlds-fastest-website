@@ -3,7 +3,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 a {
     text-decoration: none;
     color: rgb(61, 146, 201);
@@ -12,7 +11,6 @@ a:hover,
 a:focus {
     text-decoration: underline;
 }
-
 #layout {
     padding: 0;
 }
@@ -133,7 +131,6 @@ pre {
     background: url("http://phalcon-12a2.kxcdn.com/img/keycdn.svg") no-repeat;
     display: inline-block;
 }
-
 @media (min-width: 48em) {
     .content {
         padding: 2em 3em 0;
