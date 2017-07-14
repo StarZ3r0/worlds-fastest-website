@@ -84,6 +84,11 @@ root@yass:~$ dd if=/dev/zero of=benchmark bs=64K count=32K conv=fdatasync
 32768+0 records in
 32768+0 records out
 2147483648 bytes (2.1 GB, 2.0 GiB) copied, 2.41592 s, 889 MB/s
+
+root@yass:~# ioping -c 30 .
+--- . (ext4 /dev/ploop41319p1) ioping statistics ---
+30 requests completed in 29.0 s, 4.06 k iops, 15.9 MiB/s
+min/avg/max/mdev = 75 us / 246 us / 340 us / 76 us
 </pre>
                     <p>
                         A másik pedig, hogy földrajzilag lehetőleg minél közelebb legyen a szerverünk (ez esetünkben pont nem teljesül) vagy ha már nincs közel, akkor legalább minél nagyobb sávszélessége legyen, de nem csak országon belülre, hanem lehetőleg kívülre is. Nézzük az eredményeket <a href="https://github.com/sivel/speedtest-cli">speedtest-cli</a>-vel mérve:                        
