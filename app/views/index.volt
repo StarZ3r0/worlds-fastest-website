@@ -148,14 +148,37 @@ Upload: 63.76 Mbit/s
                 </header>
                 <div class="post-description">
                     <p>
-                        Mint említettem már célszerű lenne, ha a képek letöltése földrajzilag a legközelebbi szerverről történne, így spórolnánk értékes ms-okat. Így ezeket egy egyszerű <code> static_url("/img/speed-logo.png")</code> hívással beállíthatjuk, hogy a CDN hivatkozása kerüljön a képeinket megjelenítő <code>img</code> tagbe.
+                        Mint említettem már célszerű lenne, ha a képek letöltése földrajzilag a legközelebbi szerverről történne, így spórolnánk értékes ms-okat. Így ezeket egy egyszerű <code>static_url("/img/speed-logo.png")</code> hívással beállíthatjuk, hogy a CDN hivatkozása kerüljön a képeinket megjelenítő <code>img</code> tagbe. Szolgáltatónak a <a href="https://www.keycdn.com/">KeyCDN</a>-t választottam, mivel ár-érték arányban nagyon jó szolgáltatást nyújtanak. 
                     </p>
                     <p>
                         <a href="/" class="keycdn-logo-svg">KeyCDN</a>
                     </p>
                     <p>
-                        Szolgáltatónak a <a href="https://www.keycdn.com/">KeyCDN</a>-t választottam, mivel ár-érték arányban nagyon jó szolgáltatást nyújtanak. 
+                        A CSS fájl CDN-re helyezésénél felmerült egy komoly probléma, mégpedig hogy akkor a PageSpeed modul nem fogja tudni tovább optimalizálni az oldalt, mivel így nem tudja majd összefűzni, tömöríteni a stíluslapot, illetve a hajtás feletti tartalomhoz sem tudja kigenerálni a szükséges mennyiségű inline CSS-t. Erre a következő megoldás született:
                     </p>
+<pre>
+public function indexAction()
+{
+    $headerCollection = $this->assets
+      ->collection('header')
+      ->setTargetPath('css/app.css')
+      ->setTargetUri('css/app.css')
+      ->addCss('css/pure-min.css')
+      ->addCss('css/grids-responsive-min.css')
+      ->addCss('css/blog.css')
+      ->join(true)
+      ->addFilter(new Phalcon\Assets\Filters\Cssmin());
+}
+</pre>
+                    <p>
+                        Tehát egyrész a korábbi <code>head</code>-ben lévő <code>static_url</code> hívást felváltotta az assetek Phalconban történő összefűzése és minimalizálása. Ezzel ezt a két dolgot levettük a PageSpeed modul válláról, ám maradt még egy fontos feladata, amit mindenképp rá kell bíznunk. A megfejtés az alábbi konfiguráció:
+                    </p>
+<pre>
+pagespeed EnableFilters rewrite_domains;
+pagespeed Domain http://worlds-fastest.website;
+pagespeed MapRewriteDomain http://phalcon-12a2.kxcdn.com http://worlds-fastest.website/;
+</pre>                    
+                    <p>Vagyis meg tudjuk mondani a PageSpeednek, hogy az optimalizálás elvégzése után írja újra az URL-t, aminek a segítségével immár a CDN-ről fog letöltődni a fájlunk.</p>
                     <p>
                         <strong>Összes költség</strong>: 49 USD / 1.2 TB forgalom
                     </p>
@@ -163,7 +186,7 @@ Upload: 63.76 Mbit/s
             </section>
             <section class="post">
                 <header class="post-header">
-                    <h2 class="post-title">Level 5: PHP</h2>
+                    <h2 class="post-title">Level 5: PHP 7 / Phalcon</h2>
                     <p class="post-meta">
                         Kategória: <span class="post-category post-category-code">Kód</span>
                     </p>
@@ -172,7 +195,23 @@ Upload: 63.76 Mbit/s
                     <p>
                         Először úgy terveztem, hogy elég lesz az Ubuntu 16.04-ben lévő 7.0-ás PHP, de aztán ha már minden alkalmazásból a legújabb került fel, akkor - gondoltam - ezzel sem teszek kivételt. Teljesítményre abszolút nincs ennél jobb, így frameworkből sem lehetett akármit választani, hogy az eddig gondosan összelegózott komponenseket ne pont a végén rontsam el.
                     </p>
-                    <p>Nos így került Phalcon 3.2 a stack utolsó helyére. Hivatalos támogatás is van rá, no meg mivel C kiterjesztésről van szó így a sebességére sem lehet panasz.</p>
+                    <p>
+                        Nos így került Phalcon 3.2 a stack utolsó helyére. Hivatalos támogatás is van rá, no meg mivel C kiterjesztésről van szó így a sebességére sem lehet panasz. Amint azt fentebb említettem, egyelőre ehhez az oldalhoz csak az assetek optimalizálásával kapcsolatos funkcióit használom. A Volt template motort engedélyezve van, a fordított view fájlokat a <code>compiled-templates</code> könyvtárban helyezi el.
+                    </p>
+                </div>
+            </section>
+            <section class="post">
+                <header class="post-header">
+                    <h2 class="post-title">Level 6: HTML / SEO</h2>
+                    <p class="post-meta">
+                        Kategória: <span class="post-category post-category-code">Kód</span>
+                    </p>
+                </header>
+                <div class="post-description">
+                    <p>
+                        A HTML kód esetében lényeges volt, hogy érvényes HTML5 kódot állítsak elő. Az on-site SEO szempontokat figyelembe véve beállításra került az oldal leírása, illetve törekedtem a minél szemantikusabb forráskódra. Ugyan nincs szerteágazó aloldal struktúra mégis elhelyeztem egy <a href="http://worlds-fastest.website/sitemap.xml">sitemap.xml</a>-t is.
+                    </p>
+                    <p></p>
                 </div>
             </section>
             <section class="post">
@@ -247,7 +286,7 @@ Transfer rate:          974.63 [Kbytes/sec] received
                         <li>Webszerver: Nginx 1.13.2</li>
                         <li>Pagespeed modul: 1.12.34.2 stable</li>
                         <li>PHP: 7.1.6</li>
-                        <li>Phalcon: 3.2.0</li>
+                        <li>Phalcon: 3.2.1</li>
                         <li>Pure CSS: 1.0.0</li>
                     </ul>
                     <p>Aki a részletekre is kiváncsi:</p>
@@ -268,7 +307,7 @@ Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies
     with Zend OPcache v7.1.6-1~ubuntu16.04.1+deb.sury.org+1, Copyright (c) 1999-2017, by Zend Technologies
 
 root@yass:~$ php -r "echo Phalcon\Version::get();"
-3.2.0
+3.2.1
 </pre>
                 </div>
             </section> 
@@ -289,8 +328,9 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                         <li><a href="https://gtmetrix.com/reports/worlds-fastest.website/J2fHqFtk">GTmetrix</a>: PageSpeed Score 100% / YSlow Score 100%</li>
                         <li><a href="https://tools.pingdom.com/#!/cJ2YzR/http://worlds-fastest.website/">Pingdom</a>: 100 pont</li>
                         <li><a href="https://performance.sucuri.net/domain/worlds-fastest.website">Sucuri Load Time Tester</a>: Global Performance Grade A+</li>
-                        <li><a href="https://website.grader.com/results/worlds-fastest.website">Hubspot Website Grader</a>: 90 pont</li>
+                        <li><a href="https://website.grader.com/results/worlds-fastest.website">Hubspot Website Grader</a>: 100 pont</li>
                         <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fworlds-fastest.website%2F">The W3C Markup Validation Service</a>: 100% valid html</li>
+                        <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=worlds-fastest.website">Qualys SSL Labs - SSL Server Test</a>: A+ rating</li>
                     </ul>
                 </div>
             </section> 
@@ -306,7 +346,7 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                         A közeljövőben még további finomításokat, fejlesztéseket kívánok megcsinálni az oldalon, úgy mint
                     <p>
                     <ul>
-                        <li>HTTPS beállítása a Let's Encrypt segítségével</li>
+                        <li>SSL konfiguráció optimalizálása</li>
                         <li>Nginx konfig optimalizálása</li>
                         <li><a href="https://www.ampproject.org/">AMP</a> verzió létrehozása</li>
                     </ul>
