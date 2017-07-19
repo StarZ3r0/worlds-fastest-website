@@ -78,12 +78,20 @@ $router->notFound(
     ]
 );
 
-// Define a route
+// Define routes
 $router->add(
     '/',
     [
         'controller' => 'index',
         'action'     => 'index',
+    ]
+);
+
+$router->add(
+    '/amp',
+    [
+        'controller' => 'index',
+        'action'     => 'amp',
     ]
 );
 

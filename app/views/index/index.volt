@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Worlds Fastest Website Experiment - avagy mi szükséges egy villámgyors weboldalhoz!?">
+    <link rel="amphtml" href="//worlds-fastest.website/amp">
     <title>Worlds Fastest Website Experiment</title>
     {{ assets.outputCss('header') }}
 </head>

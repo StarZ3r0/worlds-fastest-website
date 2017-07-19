@@ -17,4 +17,9 @@ class IndexController extends Controller
           ->addFilter(new Phalcon\Assets\Filters\Cssmin());
     }
 
+    public function ampAction()
+    {
+        
+    }
+
 }
