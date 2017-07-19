@@ -16,4 +16,5 @@ class IndexController extends Controller
           ->join(true)
           ->addFilter(new Phalcon\Assets\Filters\Cssmin());
     }
+
 }

@@ -2,6 +2,7 @@
 
 use Phalcon\Loader;
 use Phalcon\Mvc\View;
+use Phalcon\Mvc\Router;
 use Phalcon\Mvc\View\Engine\Volt;
 use Phalcon\Mvc\Application;
 use Phalcon\Di\FactoryDefault;
@@ -65,6 +66,28 @@ $di->set(
         return $url;
     }
 );
+
+// Create the router
+$router = new Router(false);
+
+// Set 404 paths
+$router->notFound(
+    [
+        'controller' => 'error',
+        'action'     => 'route404',
+    ]
+);
+
+// Define a route
+$router->add(
+    '/',
+    [
+        'controller' => 'index',
+        'action'     => 'index',
+    ]
+);
+
+$di->set('router', $router);
 
 $application = new Application($di);
 
