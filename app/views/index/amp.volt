@@ -362,7 +362,7 @@ pagespeed MapRewriteDomain http://phalcon-12a2.kxcdn.com http://worlds-fastest.w
                 </header>
                 <div class="post-description">
                     <p>
-                        A HTML kód esetében lényeges volt, hogy érvényes HTML5 kódot állítsak elő. Az on-site SEO szempontokat figyelembe véve beállításra került az oldal leírása, illetve törekedtem a minél szemantikusabb forráskódra. Ugyan nincs szerteágazó aloldal struktúra mégis elhelyeztem egy <a href="http://worlds-fastest.website/sitemap.xml">sitemap.xml</a>-t is.
+                        A HTML kód esetében lényeges volt, hogy érvényes HTML5 kódot állítsak elő. Az on-site SEO szempontokat figyelembe véve beállításra került az oldal leírása, illetve törekedtem a minél szemantikusabb forráskódra. Ugyan nincs szerteágazó aloldal struktúra mégis elhelyeztem egy <a href="http://worlds-fastest.website/sitemap.xml">sitemap.xml</a>-t is, illetve létrehoztam az oldal AMP verzióját</a>
                     </p>
                     <p></p>
                 </div>
@@ -484,6 +484,7 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                         <li><a href="https://website.grader.com/results/worlds-fastest.website">Hubspot Website Grader</a>: 100 pont</li>
                         <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fworlds-fastest.website%2F">The W3C Markup Validation Service</a>: 100% valid html</li>
                         <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=worlds-fastest.website">Qualys SSL Labs - SSL Server Test</a>: A+ rating</li>
+                        <li><a href="https://search.google.com/test/amp?id=W7jZyoCuAIPxEDJQABZo7g">Érvényes AMP-oldal</li>
                     </ul>
                 </div>
             </section> 
@@ -500,8 +501,7 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                     <p>
                     <ul>
                         <li>SSL konfiguráció optimalizálása</li>
-                        <li>Nginx konfig optimalizálása</li>
-                        <li><a href="https://www.ampproject.org/">AMP</a> verzió létrehozása</li>
+                        <li>Nginx konfiguráció optimalizálása</li>
                     </ul>
                 </div>
             </section> 
