@@ -484,7 +484,7 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                         <li><a href="https://website.grader.com/results/worlds-fastest.website">Hubspot Website Grader</a>: 100 pont</li>
                         <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fworlds-fastest.website%2F">The W3C Markup Validation Service</a>: 100% valid html</li>
                         <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=worlds-fastest.website">Qualys SSL Labs - SSL Server Test</a>: A+ rating</li>
-                        <li><a href="https://search.google.com/test/amp?id=W7jZyoCuAIPxEDJQABZo7g">Érvényes AMP-oldal</li>
+                        <li><a href="https://search.google.com/test/amp?id=W7jZyoCuAIPxEDJQABZo7g">Google AMP-teszt</a>: Érvényes AMP-oldal</li>
                     </ul>
                 </div>
             </section> 
