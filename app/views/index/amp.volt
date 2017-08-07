@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <link rel="canonical" href="//worlds-fastest.website">
+    <link rel="canonical" href="//cutting-edge.top">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     
     <style amp-custom>
@@ -328,8 +328,8 @@ public function indexAction()
                     </p>
 <pre>
 pagespeed EnableFilters rewrite_domains;
-pagespeed Domain http://worlds-fastest.website;
-pagespeed MapRewriteDomain http://phalcon-12a2.kxcdn.com http://worlds-fastest.website/;
+pagespeed Domain http://cutting-edge.top;
+pagespeed MapRewriteDomain http://phalcon-12a2.kxcdn.com http://cutting-edge.top/;
 </pre>                    
                     <p>Vagyis meg tudjuk mondani a PageSpeednek, hogy az optimalizálás elvégzése után írja újra az URL-t, aminek a segítségével immár a CDN-ről fog letöltődni a fájlunk.</p>
                     <p>
@@ -362,7 +362,7 @@ pagespeed MapRewriteDomain http://phalcon-12a2.kxcdn.com http://worlds-fastest.w
                 </header>
                 <div class="post-description">
                     <p>
-                        A HTML kód esetében lényeges volt, hogy érvényes HTML5 kódot állítsak elő. Az on-site SEO szempontokat figyelembe véve beállításra került az oldal leírása, illetve törekedtem a minél szemantikusabb forráskódra. Ugyan nincs szerteágazó aloldal struktúra mégis elhelyeztem egy <a href="http://worlds-fastest.website/sitemap.xml">sitemap.xml</a>-t is, illetve létrehoztam az oldal AMP verzióját</a>
+                        A HTML kód esetében lényeges volt, hogy érvényes HTML5 kódot állítsak elő. Az on-site SEO szempontokat figyelembe véve beállításra került az oldal leírása, illetve törekedtem a minél szemantikusabb forráskódra. Ugyan nincs szerteágazó aloldal struktúra mégis elhelyeztem egy <a href="http://cutting-edge.top/sitemap.xml">sitemap.xml</a>-t is, illetve létrehoztam az oldal AMP verzióját</a>
                     </p>
                     <p></p>
                 </div>
@@ -476,15 +476,15 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                         Az oldallal elért eredmények:
                     <p>
                     <ul>
-                        <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fworlds-fastest.website%2F&tab=desktop">Google PageSpeed Insights</a>: mobil 100 pont, desktop 100 pont</li>
+                        <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcutting-edge.top%2F&tab=desktop">Google PageSpeed Insights</a>: mobil 100 pont, desktop 100 pont</li>
                         <li><a href="https://testmysite.thinkwithgoogle.com/">Google Mobile Website Speed Testing Tool</a>: 2s Loading time: Excellent (Low Est. Visitor loss)</li>
-                        <li><a href="https://gtmetrix.com/reports/worlds-fastest.website/J2fHqFtk">GTmetrix</a>: PageSpeed Score 100% / YSlow Score 100%</li>
-                        <li><a href="https://tools.pingdom.com/#!/cJ2YzR/http://worlds-fastest.website/">Pingdom</a>: 100 pont</li>
-                        <li><a href="https://performance.sucuri.net/domain/worlds-fastest.website">Sucuri Load Time Tester</a>: Global Performance Grade A+</li>
-                        <li><a href="https://website.grader.com/results/worlds-fastest.website">Hubspot Website Grader</a>: 100 pont</li>
-                        <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fworlds-fastest.website%2F">The W3C Markup Validation Service</a>: 100% valid html</li>
-                        <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=worlds-fastest.website">Qualys SSL Labs - SSL Server Test</a>: A+ rating</li>
-                        <li><a href="https://search.google.com/test/amp?id=W7jZyoCuAIPxEDJQABZo7g">Google AMP-teszt</a>: Érvényes AMP-oldal</li>
+                        <li><a href="https://gtmetrix.com/reports/cutting-edge.top/EkcqI6Bf">GTmetrix</a>: PageSpeed Score 100% / YSlow Score 100%</li>
+                        <li><a href="https://tools.pingdom.com/#!/d57Fnh/http://cutting-edge.top/">Pingdom</a>: 100 pont</li>
+                        <li><a href="https://performance.sucuri.net/domain/cutting-edge.top">Sucuri Load Time Tester</a>: Global Performance Grade A+</li>
+                        <li><a href="https://website.grader.com/results/cutting-edge.top">Hubspot Website Grader</a>: 100 pont</li>
+                        <li><a href="https://validator.w3.org/nu/?acceptlanguage=&doc=http%3A%2F%2Fcutting-edge.top%2F">The W3C Markup Validation Service</a>: 100% valid html</li>
+                        <li><a href="https://www.ssllabs.com/ssltest/analyze.html?d=cutting-edge.top">Qualys SSL Labs - SSL Server Test</a>: A+ rating</li>
+                        <li><a href="https://search.google.com/test/amp?id=SxkwjuxDyEmfUZ33cNIkEw">Google AMP-teszt</a>: Érvényes AMP-oldal</li>
                     </ul>
                 </div>
             </section> 
