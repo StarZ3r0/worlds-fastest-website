@@ -2,6 +2,7 @@
 <html amp>
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="{{ static_url("/favicon.ico") }}">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <link rel="canonical" href="//cutting-edge.top">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -185,7 +186,7 @@
                 </header>
                 <div class="post-description">
                     <p>
-                        Ha már nekifogunk a kísérletnek, akkor ne egy <code>.tk</code> domain köszönjön vissza, valami új tld-t szerettem volna, ha már úgyis tucatjával jelennek meg az újak. Így a <code>.website</code>-ra esett a választás, meg is kaptam a <a href="https://www.namecheap.com/">Namecheapnél</a> viszonylag olcsón. Önmagában a domain névnek nincs semmilyen jelentősége a sebesség terén, ezért itt könnyen megalkuvók lehetünk. 
+                        Ha már nekifogunk a kísérletnek, akkor ne egy <code>.tk</code> domain köszönjön vissza, valami új tld-t szerettem volna, ha már úgyis tucatjával jelennek meg az újak. Így a <code>.top</code>-ra esett a választás, meg is kaptam a <a href="https://www.namecheap.com/">Namecheapnél</a> viszonylag olcsón. Önmagában a domain névnek nincs semmilyen jelentősége a sebesség terén, ezért itt könnyen megalkuvók lehetünk. 
                     </p>
                     <p>
                         <strong>Összes költség</strong>: $1.06 USD
@@ -479,6 +480,7 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                         <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcutting-edge.top%2F&tab=desktop">Google PageSpeed Insights</a>: mobil 100 pont, desktop 100 pont</li>
                         <li><a href="https://testmysite.thinkwithgoogle.com/">Google Mobile Website Speed Testing Tool</a>: 2s Loading time: Excellent (Low Est. Visitor loss)</li>
                         <li><a href="https://gtmetrix.com/reports/cutting-edge.top/EkcqI6Bf">GTmetrix</a>: PageSpeed Score 100% / YSlow Score 100%</li>
+                        <li><a href="https://www.webpagetest.org/result/180103_CM_e0267f8601af785e68eef87cda457c74/">WebPagetest</a>: Grade A</li>
                         <li><a href="https://tools.pingdom.com/#!/d57Fnh/http://cutting-edge.top/">Pingdom</a>: 100 pont</li>
                         <li><a href="https://performance.sucuri.net/domain/cutting-edge.top">Sucuri Load Time Tester</a>: Global Performance Grade A+</li>
                         <li><a href="https://website.grader.com/results/cutting-edge.top">Hubspot Website Grader</a>: 100 pont</li>
