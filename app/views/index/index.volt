@@ -39,13 +39,13 @@
                 </header>
                 <div class="post-description">
                     <p>
-                        Ha már nekifogunk a kísérletnek, akkor ne egy <code>.tk</code> domain köszönjön vissza, valami új tld-t szerettem volna, ha már úgyis tucatjával jelennek meg az újak. Így a <code>.top</code>-ra esett a választás, meg is kaptam a <a href="https://www.namecheap.com/">Namecheapnél</a> viszonylag olcsón. Önmagában a domain névnek nincs semmilyen jelentősége a sebesség terén, ezért itt könnyen megalkuvók lehetünk. 
+                        Ha már nekifogunk a kísérletnek, akkor ne egy <code>.tk</code> domain köszönjön vissza, valami új tld-t szerettem volna, ha már úgyis tucatjával jelennek meg az újak. Így a <code>.top</code>-ra esett a választás, meg is kaptam a <a href="https://www.namecheap.com/">Namecheapnél</a> viszonylag olcsón. Önmagában a domain névnek nincs semmilyen jelentősége a sebesség terén, ezért itt könnyen megalkuvók lehetünk.
                     </p>
                     <p>
                         <strong>Összes költség</strong>: $1.06 USD
                     </p>
                 </div>
-            </section> 
+            </section>
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Level 1: DNS</h2>
@@ -55,14 +55,14 @@
                 </header>
                 <div class="post-description">
                     <p>
-                        Szóval a névfeloldásnál kezdődik kicsiny oldalunk élete. Kivel is oldathatnánk fel domain nevünket, mint a leggyorsabb szolgáltatóval a világon a <a href="https://dnsmadeeasy.com/">DNSMadeEasy</a>-vel. Független mérések alapján pár éve már <a href="https://dnsmadeeasy.com/about/dns-speed/">ők a legjobbak</a> az iparágukban. Olyannyira profi a hálozatuk, hogy elbírja a napi 40 milliárd lekérdezést. 
+                        Szóval a névfeloldásnál kezdődik kicsiny oldalunk élete. Kivel is oldathatnánk fel domain nevünket, mint a leggyorsabb szolgáltatóval a világon a <a href="https://dnsmadeeasy.com/">DNSMadeEasy</a>-vel. Független mérések alapján pár éve már <a href="https://dnsmadeeasy.com/about/dns-speed/">ők a legjobbak</a> az iparágukban. Olyannyira profi a hálozatuk, hogy elbírja a napi 40 milliárd lekérdezést.
                     </p>
                     <img src="{{ static_url("/img/speed-logo.png") }}" class="pure-img" alt="DNSMadeEasy speed logo" width="501" height="397">
                     <p>
                         <strong>Összes költség</strong>: 29.95 USD / év
                     </p>
                 </div>
-            </section>  
+            </section>
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Level 2: VPS</h2>
@@ -93,7 +93,7 @@ root@yass:~# ioping -c 30 .
 min/avg/max/mdev = 75 us / 246 us / 340 us / 76 us
 </pre>
                     <p>
-                        A másik pedig, hogy földrajzilag lehetőleg minél közelebb legyen a szerverünk (ez esetünkben pont nem teljesül) vagy ha már nincs közel, akkor legalább minél nagyobb sávszélessége legyen, de nem csak országon belülre, hanem lehetőleg kívülre is. Nézzük az eredményeket <a href="https://github.com/sivel/speedtest-cli">speedtest-cli</a>-vel mérve:                        
+                        A másik pedig, hogy földrajzilag lehetőleg minél közelebb legyen a szerverünk (ez esetünkben pont nem teljesül) vagy ha már nincs közel, akkor legalább minél nagyobb sávszélessége legyen, de nem csak országon belülre, hanem lehetőleg kívülre is. Nézzük az eredményeket <a href="https://github.com/sivel/speedtest-cli">speedtest-cli</a>-vel mérve:
                     </p>
 <pre>
 root@yass:~$ ./speedtest-cli
@@ -127,7 +127,7 @@ Upload: 63.76 Mbit/s
                         <strong>Összes költség</strong>: 65.99 USD / év
                     </p>
                 </div>
-            </section> 
+            </section>
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Level 3: NGINX</h2>
@@ -155,7 +155,7 @@ Upload: 63.76 Mbit/s
                 </header>
                 <div class="post-description">
                     <p>
-                        Mint említettem már célszerű lenne, ha a képek letöltése földrajzilag a legközelebbi szerverről történne, így spórolnánk értékes ms-okat. Így ezeket egy egyszerű <code>static_url("/img/speed-logo.png")</code> hívással beállíthatjuk, hogy a CDN hivatkozása kerüljön a képeinket megjelenítő <code>img</code> tagbe. Szolgáltatónak a <a href="https://www.keycdn.com/">KeyCDN</a>-t választottam, mivel ár-érték arányban nagyon jó szolgáltatást nyújtanak. 
+                        Mint említettem már célszerű lenne, ha a képek letöltése földrajzilag a legközelebbi szerverről történne, így spórolnánk értékes ms-okat. Így ezeket egy egyszerű <code>static_url("/img/speed-logo.png")</code> hívással beállíthatjuk, hogy a CDN hivatkozása kerüljön a képeinket megjelenítő <code>img</code> tagbe. Szolgáltatónak a <a href="https://www.keycdn.com/">KeyCDN</a>-t választottam, mivel ár-érték arányban nagyon jó szolgáltatást nyújtanak.
                     </p>
                     <p>
                         <a href="/" class="keycdn-logo-svg">KeyCDN</a>
@@ -184,7 +184,7 @@ public function indexAction()
 pagespeed EnableFilters rewrite_domains;
 pagespeed Domain http://cutting-edge.top;
 pagespeed MapRewriteDomain http://phalcon-12a2.kxcdn.com http://cutting-edge.top/;
-</pre>                    
+</pre>
                     <p>Vagyis meg tudjuk mondani a PageSpeednek, hogy az optimalizálás elvégzése után írja újra az URL-t, aminek a segítségével immár a CDN-ről fog letöltődni a fájlunk.</p>
                     <p>
                         <strong>Összes költség</strong>: 49 USD / 1.2 TB forgalom
@@ -230,7 +230,7 @@ pagespeed MapRewriteDomain http://phalcon-12a2.kxcdn.com http://cutting-edge.top
                 </header>
                 <div class="post-description">
                     <p>
-                       Itt több faktort is figyelembe kell venni. Az alábbi lépésekre volt szükség: 
+                       Itt több faktort is figyelembe kell venni. Az alábbi lépésekre volt szükség:
                     </p>
                     <ul>
                         <li>Egyrészt ugye, célszerű a minél kevesebb asset vagy legalábbis minél kevesebb requestet elérni, ami alapvetőleg is jó, de a fentebb vázolt problémák miatt esetünkben különösen hasznosak. Hogy azért a karbantarthatóság megmaradjon külön kezeljük a 3 CSS fájlt, amiből kettő a <a href="https://purecss.io/">PureCSS</a> saját fáljja, a harmadik pedig a blogunk csinosítására használt állomány. Ezt a PageSpeed modul fűzi össze, majd mindjárt minifyolja is, ezzel tehát különösebb teendőnk nincs.</li>
@@ -247,14 +247,14 @@ pagespeed MapRewriteDomain http://phalcon-12a2.kxcdn.com http://cutting-edge.top
                 </header>
                 <div class="post-description">
                     <p>
-                        Az alábbi teszteket futtatam a szerveren:                        
+                        Az alábbi teszteket futtatam a szerveren:
                     </p>
                     <p>
                         Apache benchmark Nginx konfiguráció előtt:
                     </p>
 <pre>
 root@yass:~$ ab -k -n 10000 -c 50 -s 120 http://167.114.121.16/
-This is ApacheBench, Version 2.3 
+This is ApacheBench, Version 2.3
 
 Server Software:        nginx/1.13.2
 Server Hostname:        167.114.121.16
@@ -317,7 +317,7 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
 3.2.1
 </pre>
                 </div>
-            </section> 
+            </section>
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Eredmények</h2>
@@ -333,6 +333,7 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                         <li><a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcutting-edge.top%2F&tab=desktop">Google PageSpeed Insights</a>: mobil 100 pont, desktop 100 pont</li>
                         <li><a href="https://testmysite.thinkwithgoogle.com/">Google Mobile Website Speed Testing Tool</a>: 2s Loading time: Excellent (Low Est. Visitor loss)</li>
                         <li><a href="https://gtmetrix.com/reports/cutting-edge.top/EkcqI6Bf">GTmetrix</a>: PageSpeed Score 100% / YSlow Score 100%</li>
+                        <li><a href="https://securityheaders.io/?q=https%3A%2F%2Fcutting-edge.top">securityheaders.io</a>: Grade A</li>
                         <li><a href="https://www.webpagetest.org/result/180103_CM_e0267f8601af785e68eef87cda457c74/">WebPagetest</a>: Grade A</li>
                         <li><a href="https://tools.pingdom.com/#!/d57Fnh/http://cutting-edge.top/">Pingdom</a>: 100 pont</li>
                         <li><a href="https://performance.sucuri.net/domain/cutting-edge.top">Sucuri Load Time Tester</a>: Global Performance Grade A+</li>
@@ -342,7 +343,7 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                         <li><a href="https://search.google.com/test/amp?id=SxkwjuxDyEmfUZ33cNIkEw">Google AMP-teszt</a>: Érvényes AMP-oldal</li>
                     </ul>
                 </div>
-            </section> 
+            </section>
             <section class="post">
                 <header class="post-header">
                     <h2 class="post-title">Roadmap</h2>
@@ -359,7 +360,7 @@ root@yass:~$ php -r "echo Phalcon\Version::get();"
                         <li>Nginx konfiguráció optimalizálása</li>
                     </ul>
                 </div>
-            </section> 
+            </section>
         </div>
         <div class="footer">
             <div class="pure-menu pure-menu-horizontal">
